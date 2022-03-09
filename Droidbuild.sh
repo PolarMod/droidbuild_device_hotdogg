@@ -14,10 +14,10 @@ target_hotdogg(){
   TARGET_USES_MICROG=0
   TARGET_SUPPORTS_GVISUAL=1
   info "Patching frameworks/native"
-  exec cp $LOCAL_PATH/files/phone-xhdpi-12288-dalvik-heap.mk $BASEDIR/frameworks/native/phone-xhdpi-12288-dalvik-heap.mk
+  exec cp $LOCAL_PATH/files/phone-xhdpi-12288-dalvik-heap.mk $BASEDIR/frameworks/native/build/phone-xhdpi-12288-dalvik-heap.mk
   target_build-device
   info "Reverting patch for frameworks/native"
-  exec rm $BASEDIR/frameworks/native/phone-xhdpi-12288-dalvik-heap.mk 
+  exec rm $BASEDIR/frameworks/native/build/phone-xhdpi-12288-dalvik-heap.mk 
 }
 
 droidbuild_module(){
