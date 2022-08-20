@@ -12,7 +12,7 @@ target_hotdogg(){
   TARGET_SIGNED_BUILD=true
   TARGET_HOSTS_CAT=1
   TARGET_USES_MICROG=0
-  TARGET_SUPPORTS_GVISUAL=1
+  TARGET_SUPPORTS_GMSCOMPAT=0
   info "Patching frameworks/native"
   exec cp $LOCAL_PATH/files/phone-xhdpi-12288-dalvik-heap.mk $BASEDIR/frameworks/native/phone-xhdpi-12288-dalvik-heap.mk
   target_build-device
